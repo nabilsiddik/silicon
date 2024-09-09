@@ -175,14 +175,69 @@ section{
     margin-top: 20px;
 }
 #header .header_left{
-    width: 70%;
+    width: 60%;
 }
 #header .header_right{
-    width: 30%;
+    width: 40%;
 }
-#header .header_righ button{
 
+
+.toggle-container label {
+    font-size: 16px;
+    color: #4a4a4a;
 }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b3b3b3;
+    transition: 0.4s;
+    border-radius: 26px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .slider {
+    background-color: #7b82a3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+
+
+
+
+
 
 /** Hero Section **/
 #hero .icon{
@@ -195,6 +250,8 @@ section{
     border-radius: 50%;
     box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
 }
+
+/** Brand Section **/
 
 
 /** Features Section **/
@@ -301,6 +358,10 @@ section{
     padding: 15px 20px;
     border-radius: 5px;
 }
+#faq .faq_right ul li.open .icon{
+    background: var(--primary-color);
+    color: #fff;
+}
 #faq .faq_right ul li .icon{
     width: 30px;
     height: 30px;
@@ -309,6 +370,9 @@ section{
     justify-content: center;
     background: #F3F6FF;
     border-radius: 50%;
+}
+#faq .accordion_content p{
+    color: #5f5f63
 }
 
 
@@ -322,9 +386,12 @@ section{
     width: 50%;
 }
 #newsletter .form input[type="email"]{
-    padding: 16px;
+    padding: 16px 35px;
     border: 1px solid #D4D7E5;
     font-size: 18px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #B4B7C9;
 }
 #newsletter .form{
     width: 50%;
@@ -343,6 +410,18 @@ section{
     font-size: 16px;
     margin-left: -4px;
 }
+#newsletter .form .input_group{
+    position: relative;
+}
+#newsletter .form .input_group .icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50% );
+    left: 10px;
+    font-size: 20px;
+    color: #B4B7C9;
+}
+
 
 /** Footer copyright **/
 #footer_copyright{

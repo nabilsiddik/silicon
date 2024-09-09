@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- Fontawesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Styles/style.css">
 
     <title>Silicon</title>
 </head>
+
 <body>
-    
+
     <!-- Header -->
-     <header id="header">
+    <header id="header">
         <!-- Header Top -->
         <div class="header_top mb-60">
             <div class="container flex justify-between">
@@ -32,9 +38,15 @@
                 </div>
 
                 <div class="header_right">
-                    <div class="flex items-center gap-10 justify-end">
-                        <div class="mode">
-                            <span class="block">Dark Mode</span>
+                    <div class="flex items-center gap-20 justify-end">
+                        <div class="mode flex items-center gap-10">
+                            <span>Dark Mode</span>
+                            <div class="toggle-container">
+                                <label class="switch">
+                                    <input type="checkbox" id="darkModeSwitch">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
                         </div>
                         <div class="signup">
                             <button>
@@ -48,12 +60,13 @@
         </div>
 
         <!-- Hero Section -->
-         <section id="hero">
+        <section id="hero">
             <div class="container flex justify-between gap-30">
                 <div class="hero_left flex direction-column justify-between mt-70">
                     <div>
                         <h1>Manage All Your <br> Money in One App</h1>
-                        <p class="my-20">We offer you a new generation of the mobile banking.Save, <br> spend & manage money in your pocket.</p>
+                        <p class="my-20">We offer you a new generation of the mobile banking.Save, <br> spend & manage
+                            money in your pocket.</p>
                         <div class="app_download flex items-center gap-10">
                             <img src="Images/appstore.png" alt="">
                             <img src="Images/googleplay.png" alt="">
@@ -69,50 +82,52 @@
                     <img src="Images/hero.svg" alt="">
                 </div>
             </div>
-         </section>
-     </header>
+        </section>
+    </header>
 
-     <!-- Main -->
-     <main id="main">
+    <!-- Main -->
+    <main id="main">
         <!-- Brand Section -->
-         <section id="brand_section">
+        <section id="brand_section">
             <div class="container flex items-center justify-between gap-20">
                 <div class="brand_logo">
-                    <img src="Images/logo (1).png" alt="brand logo">
+                    <img src="Images/brand-1.png" alt="brand logo">
                 </div>
                 <div class="brand_logo">
-                    <img src="Images/logo (2).png" alt="brand logo">
-                </div> 
+                    <img src="Images/brand-2.png" alt="brand logo">
+                </div>
                 <div class="brand_logo">
-                    <img src="Images/logo (3).png" alt="brand logo">
-                </div> 
+                    <img src="Images/brand-3.png" alt="brand logo">
+                </div>
                 <div class="brand_logo">
-                    <img src="Images/logo (4).png" alt="brand logo">
-                </div> 
+                    <img src="Images/brand-4.png" alt="brand logo">
+                </div>
                 <div class="brand_logo">
-                    <img src="Images/logo (3).png" alt="brand logo">
-                </div> 
+                    <img src="Images/brand-5.png" alt="brand logo">
+                </div>
                 <div class="brand_logo">
-                    <img src="Images/Vector.png" alt="brand logo">
-                </div>                 
+                    <img src="Images/brand-6.png" alt="brand logo">
+                </div>
             </div>
-         </section>
+        </section>
 
-         <!-- Features Section -->
-          <section id="features">
+        <!-- Features Section -->
+        <section id="features">
             <div class="container flex items-center justify-between gap-30">
                 <div class="features_left">
                     <img src="Images/image.png" alt="">
                 </div>
-    
+
                 <div class="features_right">
                     <div class="section_heading mb-30">
                         <h2>App Features</h2>
-                        <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+                        <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis
+                            egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum,
+                            at nec lacus.</p>
                     </div>
 
                     <!-- All Features -->
-                     <div class="all_features flex gap-30">
+                    <div class="all_features flex gap-30">
                         <!-- features col 1 -->
                         <div class="features_col_1">
                             <div class="icon_box flex gap-20 mb-30">
@@ -121,27 +136,30 @@
                                 </div>
                                 <div class="texts">
                                     <h3>Easy Payments</h3>
-                                    <p class="mt-10">Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                                    <p class="mt-10">Id mollis consectetur congue egestas egestas suspendisse blandit
+                                        justo.</p>
                                 </div>
                             </div>
-    
+
                             <div class="icon_box flex gap-20 mb-30">
-                                <div class="image_icon mt-5">
-                                    <img src="Images/Vector (1).png" alt="">
-                                </div>
-                                <div class="texts">
-                                    <h3>Cost Statistics</h3>
-                                    <p class="mt-10">Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
-                                </div>
-                            </div>
-    
-                            <div class="icon_box flex gap-20">
                                 <div class="image_icon mt-5">
                                     <img src="Images/Vector (2).png" alt="">
                                 </div>
                                 <div class="texts">
+                                    <h3>Cost Statistics</h3>
+                                    <p class="mt-10">Mattis urna ultricies non amet, purus in auctor non. Odio vulputate
+                                        ac nibh.</p>
+                                </div>
+                            </div>
+
+                            <div class="icon_box flex gap-20">
+                                <div class="image_icon mt-5">
+                                    <img src="Images/Vector (4).png" alt="">
+                                </div>
+                                <div class="texts">
                                     <h3>Regular Cashback</h3>
-                                    <p class="mt-10">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
+                                    <p class="mt-10">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum
+                                        imperdiet eleifend.</p>
                                 </div>
                             </div>
                         </div>
@@ -151,61 +169,65 @@
                         <div class="features_col_2">
                             <div class="icon_box flex gap-20 mb-30">
                                 <div class="image_icon mt-5">
-                                    <img src="Images/Vector (3).png" alt="">
+                                    <img src="Images/Vector (1).png" alt="">
                                 </div>
                                 <div class="texts">
                                     <h3>Data Security</h3>
-                                    <p class="mt-10">Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
+                                    <p class="mt-10">Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum
+                                        non. </p>
                                 </div>
                             </div>
-    
+
                             <div class="icon_box flex gap-20 mb-30">
                                 <div class="image_icon mt-5">
-                                    <img src="Images/Vector (4).png" alt="">
+                                    <img src="Images/Vector (3).png" alt="">
                                 </div>
                                 <div class="texts">
                                     <h3>Support 24/7</h3>
-                                    <p class="mt-10">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+                                    <p class="mt-10">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam
+                                        mauris.</p>
                                 </div>
                             </div>
-    
+
                             <div class="icon_box flex gap-20">
                                 <div class="image_icon mt-5">
                                     <img src="Images/Vector (5).png" alt="">
                                 </div>
                                 <div class="texts">
                                     <h3>Top Standards</h3>
-                                    <p class="mt-10">Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
+                                    <p class="mt-10">Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id.
+                                        Sit facilisis dolor arcu.</p>
                                 </div>
                             </div>
                         </div>
-                     </div>
-    
+                    </div>
+
                 </div>
             </div>
-          </section>
+        </section>
 
 
-          <!-- Work Section -->
-          <section id="work">
+        <!-- Work Section -->
+        <section id="work">
             <div class="container flex direction-column items-center">
                 <h2 class="text-center mb-30">How Does It Work?</h2>
                 <div class="work_images flex gap-30 mt-20">
-                    <img src="Images/iPhone 12 Pro (1).png" alt="">
-                    <img src="Images/iPhone 12 Pro (2).png" alt="">
                     <img src="Images/iPhone 12 Pro.png" alt="">
+                    <img src="Images/iPhone 12 Pro (2).png" alt="">
+                    <img src="Images/iPhone 12 Pro (1).png" alt="">
                 </div>
 
                 <div class="section_heading mb-30 text-center mt-30">
                     <h2>Latest transaction history</h2>
-                    <p class="mt-10">Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in consectetur condimentum. </p>
+                    <p class="mt-10">Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis
+                        tristique quisque hac in consectetur condimentum. </p>
                 </div>
             </div>
-          </section>
+        </section>
 
 
-          <!-- Call To action -->
-          <section id="cta">
+        <!-- Call To action -->
+        <section id="cta">
             <div class="container">
                 <!-- CTA Rwo 1 -->
                 <div class="cta_row_1 flex items-center justify-between gap-30">
@@ -250,18 +272,20 @@
                         <div class="cta_icon_boxes flex gap-30">
                             <div class="icon_box">
                                 <div class="image_icon mt-5 mb-10">
-                                    <img src="Images/Vector (2).png" alt="">
+                                    <img src="Images/Vectorr.png" alt="">
                                 </div>
                                 <div class="texts">
-                                    <p class="mt-10">A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris..</p>
+                                    <p class="mt-10">A elementur and imperdiet enim, pretium etiam facilisi aenean quam
+                                        mauris..</p>
                                 </div>
                             </div>
                             <div class="icon_box">
                                 <div class="image_icon mt-5 mb-10">
-                                    <img src="Images/Vectorr.png" alt="">
+                                    <img src="Images/Vector (4).png" alt="">
                                 </div>
                                 <div class="texts">
-                                    <p class="mt-10">Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
+                                    <p class="mt-10">Manage your payments online. Mollis congue egestas egestas
+                                        fermentum fames.</p>
                                 </div>
                             </div>
                         </div>
@@ -274,13 +298,13 @@
                     </div>
                 </div>
             </div>
-          </section>
+        </section>
 
-          <!-- Testimonial Section -->
-          <section id="testimonial">
+        <!-- Testimonial Section -->
+        <section id="testimonial">
             <div class="container flex justify-between gap-30">
                 <div class="heading_text">
-                    <h2>Clients are <br> Loving Our App</h2> 
+                    <h2>Clients are <br> Loving Our App</h2>
                 </div>
                 <div class="testimonials flex justify-between gap-30">
                     <div class="testimonial flex direction-column gap-10">
@@ -294,7 +318,9 @@
                             <li><i class="fa-solid fa-star"></i></li>
                             <li><i class="fa-solid fa-star"></i></li>
                         </ul>
-                        <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
+                        <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus,
+                            egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo
+                            turpis sit amet.</p>
 
                         <div class="client_profil flex items-center gap-10">
                             <div class="profil_pic">
@@ -318,7 +344,9 @@
                             <li><i class="fa-solid fa-star"></i></li>
                             <li><i class="fa-solid fa-star"></i></li>
                         </ul>
-                        <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
+                        <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus,
+                            egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo
+                            turpis sit amet.</p>
 
                         <div class="client_profil flex items-center gap-10">
                             <div class="profil_pic">
@@ -332,13 +360,13 @@
                     </div>
                 </div>
             </div>
-          </section>
-     </main>
+        </section>
+    </main>
 
-     <!-- Footer Sectino -->
-     <footer>
+    <!-- Footer Sectino -->
+    <footer>
         <!-- FAQ Section -->
-         <section id="faq">
+        <section id="faq">
             <div class="container flex justify-between gap-30">
                 <div class="faq_left">
                     <div class="section_heading mb-30">
@@ -357,7 +385,7 @@
                         </div>
 
                         <div class="contact_box box_2 flex direction-column gap-10">
-                            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                            <span class="icon"><i class="fa-brands fa-rocketchat"></i></span>
                             <p>Still have questions?</p>
                             <a href="#">
                                 contact us
@@ -378,20 +406,32 @@
                                 </div>
                             </li>
                             <li class="flex items-center justify-between">
-                                <p>Can I schedule future transfers?</p>
+                                <p>
+                                    What formats can I download my transaction history in?
+                                </p>
                                 <div class="icon">
                                     <span><i class="fa-solid fa-angle-down"></i></span>
                                 </div>
                             </li>
-                            <li class="flex items-center justify-between">
-                                <p>When can I use Banking App services?</p>
-                                <div class="icon">
-                                    <span><i class="fa-solid fa-angle-down"></i></span>
+                            <li class="open">
+                                <div class="accordion_header flex items-center justify-between">
+                                    <p>Can I schedule future transfers?</p>
+                                    <div class="icon">
+                                        <span><i class="fa-solid fa-angle-up"></i></span>
+                                    </div>
+                                </div>
+                                <div class="accordion_content pt-20">
+                                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam
+                                        arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat
+                                        lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa
+                                        cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida
+                                        adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique
+                                        tincidunt suspendisse ut consequat.</p>
                                 </div>
                             </li>
 
                             <li class="flex items-center justify-between">
-                                <p>Can I schedule future transfers?</p>
+                                <p>When can I use Banking App services?</p>
                                 <div class="icon">
                                     <span><i class="fa-solid fa-angle-down"></i></span>
                                 </div>
@@ -414,30 +454,34 @@
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
 
-         <!-- Newsletter Section -->
-         <section id="newsletter">
+        <!-- Newsletter Section -->
+        <section id="newsletter">
             <div class="container flex items-center">
                 <div class="heading flex items-center gap-20">
                     <img src="Images/notification.png" alt="">
                     <h3>Subscribe to our newsletter to stay informed about latest updates</h3>
                 </div>
                 <div class="form">
-                    <form>
-                        <input type="email" placeholder="Your Email">
+                    <form class="flex items-center">
+                        <div class="input_group">
+                            <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                            <input type="email" placeholder="Your Email">
+                        </div>
                         <input type="submit" value="Subscribe">
                     </form>
                 </div>
             </div>
-         </section>
+        </section>
 
-         <section id="footer_copyright">
+        <section id="footer_copyright">
             <div class="container">
                 <p class="text-center">&copy; 2024 Silicon. All rights reserved. Credit MadrasThemes</p>
             </div>
-         </section>
-     </footer>
+        </section>
+    </footer>
 
 </body>
+
 </html>
