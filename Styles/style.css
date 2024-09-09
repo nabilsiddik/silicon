@@ -49,6 +49,9 @@ h3{
 .block{
     display: block;
 }
+.text-center{
+    text-align: center;
+}
 .items-center{
     align-items: center;
 }
@@ -210,4 +213,12 @@ section{
 #features .features_right .image_icon img{
     width: 30px;
     
+}
+
+
+/** Work sectino **/
+#work .section_heading p{
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
 }
