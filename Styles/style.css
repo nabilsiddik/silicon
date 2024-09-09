@@ -139,6 +139,9 @@ h3{
 .mt-70{
     margin-top: 70px;
 }
+.mb-10{
+    margin-bottom: 10px;
+}
 .mb-20{
     margin-bottom: 20px;
 }
@@ -217,8 +220,27 @@ section{
 
 
 /** Work sectino **/
+#work{
+    background: #F3F6FF;
+    padding: 50px 0;
+}
 #work .section_heading p{
     max-width: 60%;
     margin: 0 auto;
     margin-top: 10px;
+}
+
+
+/** CTA sectin **/ 
+#cta .container{
+    max-width: 1100px;
+}
+#cta .icon{
+    color: var(--primary-color)
+}
+#cta .cta_row_2 .row_2_left{
+    width: 50%;
+}
+#cta .cta_row_2 .row_2_right{
+    width: 50%;
 }
