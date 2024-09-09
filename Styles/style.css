@@ -310,3 +310,41 @@ section{
     background: #F3F6FF;
     border-radius: 50%;
 }
+
+
+/** Section **/
+#newsletter .container{
+    background: #F3F6FF;
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+#newsletter .heading{
+    width: 50%;
+}
+#newsletter .form input[type="email"]{
+    padding: 16px;
+    border: 1px solid #D4D7E5;
+    font-size: 18px;
+}
+#newsletter .form{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+}
+#newsletter .form input[type="email"]:focus{
+    outline: none;
+}
+#newsletter .form input[type="submit"]{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 18px 20px;
+    border: none;
+    font-size: 16px;
+    margin-left: -4px;
+}
+
+/** Footer copyright **/
+#footer_copyright{
+    margin-bottom: 50px;
+}
