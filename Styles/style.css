@@ -121,7 +121,12 @@ h3{
     padding-bottom: 30px;
 }
 
-
+.mt-5{
+    margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
+}
 .mt-20{
     margin-top: 20px;
 }
@@ -183,4 +188,26 @@ section{
     justify-content: center;
     border-radius: 50%;
     box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+}
+
+
+/** Features Section **/
+#features .features_left{
+    width: 35%;
+}
+#features .features_right{
+    width: 65%;
+}
+#features .features_right .image_icon{
+    background: rgba(99, 102, 241, 0.08);
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+#features .features_right .image_icon img{
+    width: 30px;
+    
 }
