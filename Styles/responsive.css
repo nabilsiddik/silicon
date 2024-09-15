@@ -31,14 +31,17 @@
     #hero .title_for_mobile{
         display: block;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         margin-top: -30px;
+    }
+    #hero .container .hero_left{
+        width: 40%
     }
     #hero .container .hero_left h1{
         display: none;
     }
     #hero .container .app_download img{
-        max-width: 180px;
+        max-width: 150px;
     }
     #hero .container .hero_left p br{
         display: none;
@@ -173,8 +176,85 @@
         display: block;
     }
 
+}
 
 
+
+
+
+/** Mobile Responsivness **/
+@media screen and (max-width: 768px){
+
+    /** Header Section **/
+    #header .header_right .mode_text{
+        display: none;
+    }
+
+
+    /** Hero Section **/
+    #hero .title_for_mobile h1{
+        font-size: 40px;
+    }
+    #hero .container{
+        display: block;
+    }
+    #hero .title_for_mobile{
+        margin-bottom: 0px;
+    }
+    #hero .container .hero_left{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #hero .container .hero_left h1{
+        display: none;
+    }
+    #hero .container .app_download{
+        flex-direction: column;
+    }
+    #hero .container .discover_more{
+        justify-content: center;
+    }
+    #hero .container .app_download .desktop_img{
+        display: none;
+    }
+    #hero .container .app_download .mobile_img{
+        display: block;
+        flex-direction: column;
+    }
+
+    #hero .hero_right{
+        display: none;
+    }
+
+
+
+    /** Features Section Responsive **/
+    #features .section_heading{
+        text-align: center;
+    }
+
+    #features .all_features {
+        display: block;
+    }
+
+    #features .features_col_1{
+        margin-bottom: 50px;
+    }
+
+
+    /** Work Section **/
+    #work .res_hidden{
+        display: none;
+    }
+
+    #work .work_images{
+        display: block;
+        text-align: center;
+    }
+    #work .work_image img{
+        width: 100%;
+    }
 
 
 

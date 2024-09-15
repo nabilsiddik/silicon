@@ -255,6 +255,9 @@ input:checked + .slider:before {
 #hero .title_for_mobile{
     display: none;
 }
+#hero .container .app_download .mobile_img{
+    display: none;
+}
 
 /** Brand Section **/
 
