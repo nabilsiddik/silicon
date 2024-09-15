@@ -4,17 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+
     <!-- Fontawesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a576612222.css" crossorigin="anonymous">
     <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/responsive.css">
 
     <title>Silicon</title>
 </head>
@@ -54,6 +48,12 @@
                                 Signup
                             </button>
                         </div>
+
+                        <div class="mobile_menu_icon">
+                            <span>
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,6 +61,11 @@
 
         <!-- Hero Section -->
         <section id="hero">
+            <div class="container">
+                <div class="title_for_mobile">
+                    <h1>Manage All Your <br> Money in One App</h1>
+                </div>
+            </div>
             <div class="container flex justify-between gap-30">
                 <div class="hero_left flex direction-column justify-between mt-70">
                     <div>
@@ -72,7 +77,7 @@
                             <img src="Images/googleplay.png" alt="">
                         </div>
                     </div>
-                    <div class="flex items-center gap-10 mb-30">
+                    <div class="flex items-center gap-10 mb-30 discover_more">
                         <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
                         <span class="text">Discover More</span>
                     </div>
@@ -102,10 +107,10 @@
                 <div class="brand_logo">
                     <img src="Images/brand-4.png" alt="brand logo">
                 </div>
-                <div class="brand_logo">
+                <div class="brand_logo res_hide">
                     <img src="Images/brand-5.png" alt="brand logo">
                 </div>
-                <div class="brand_logo">
+                <div class="brand_logo res_hide">
                     <img src="Images/brand-6.png" alt="brand logo">
                 </div>
             </div>
@@ -368,8 +373,15 @@
         <!-- FAQ Section -->
         <section id="faq">
             <div class="container flex justify-between gap-30">
+                
+                <div class="section_heading_mobile mb-30">
+                    <h2>Any questions? <br> Check out the FAQs</h2>
+                    <p class="mt-10">Still have unanswered questions and need to get in touch?</p>
+                </div>
+
                 <div class="faq_left">
-                    <div class="section_heading mb-30">
+                    
+                    <div class="section_heading desktop mb-30">
                         <h2>Any questions? <br> Check out the FAQs</h2>
                         <p class="mt-10">Still have unanswered questions and need to get in touch?</p>
                     </div>
@@ -462,6 +474,7 @@
                 <div class="heading flex items-center gap-20">
                     <img src="Images/notification.png" alt="">
                     <h3>Subscribe to our newsletter to stay informed about latest updates</h3>
+                    <h3 class="newsletter_mobile_text">Subscribe to our newsletter </h3>
                 </div>
                 <div class="form">
                     <form class="flex items-center">

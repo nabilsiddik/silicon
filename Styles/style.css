@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 :root {
     --primary-color: #6366F1;
     --dark-body-color: #000;
@@ -9,7 +11,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 16px;
     color: var(--dark-body-color)
 }
@@ -250,6 +252,9 @@ input:checked + .slider:before {
     border-radius: 50%;
     box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
 }
+#hero .title_for_mobile{
+    display: none;
+}
 
 /** Brand Section **/
 
@@ -342,6 +347,10 @@ input:checked + .slider:before {
     margin-bottom: 10px;
 }
 
+#faq .container .section_heading_mobile{
+    display: none;
+}
+
 #faq .contact_box.box_1 .icon, a{
     color: var(--primary-color)
 }
@@ -381,6 +390,9 @@ input:checked + .slider:before {
     background: #F3F6FF;
     padding: 60px 20px;
     border-radius: 10px;
+}
+#newsletter .newsletter_mobile_text{
+    display: none;
 }
 #newsletter .heading{
     width: 50%;
