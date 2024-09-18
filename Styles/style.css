@@ -2,7 +2,11 @@
 
 :root {
     --primary-color: #6366F1;
-    --dark-body-color: #000;
+    --text-color: #000;
+    --body-bg-color: #fff;
+
+    --dark-body-bg-color: #0B0F19;
+    --dark-body-text-color: #fff;
 }
 
 *{
@@ -13,7 +17,12 @@
 body{
     font-family: "Manrope", sans-serif;
     font-size: 16px;
-    color: var(--dark-body-color)
+    color: var(--text-color);
+    background-color: var(--body-bg-color);
+}
+.body_style{
+    background-color: var(--dark-body-bg-color)!important;
+    color: var(--dark-body-text-color)!important;
 }
 .container{
     max-width: 1296px;
@@ -168,6 +177,11 @@ section{
     margin-bottom: 70px;
 }
 
+.body_style .icon{
+    color: #000;
+}
+
+
 
 /** Header Design **/
 #header{
@@ -182,6 +196,7 @@ section{
 #header .header_right{
     width: 40%;
 }
+
 
 
 .toggle-container label {
@@ -241,6 +256,7 @@ input:checked + .slider:before {
 
 
 
+
 /** Hero Section **/
 #hero .icon{
     width: 50px;
@@ -289,6 +305,11 @@ input:checked + .slider:before {
     background: #F3F6FF;
     padding: 50px 0;
 }
+.body_style #work{
+    background: #222330!important;
+}
+
+
 #work .section_heading p{
     max-width: 60%;
     margin: 0 auto;
@@ -324,6 +345,14 @@ input:checked + .slider:before {
     background: #EFF2FC;
     padding: 70px 0;
 }
+.body_style #testimonial{
+    background: #222330!important;
+}
+.body_style #testimonial .testimonial {
+    color: #000;
+}
+
+
 #testimonial ul li{
     color: #FFBA08; 
 }
@@ -403,6 +432,12 @@ input:checked + .slider:before {
     padding: 60px 20px;
     border-radius: 10px;
 }
+
+.body_style #newsletter .container{
+    background: #222330!important;
+}
+
+
 #newsletter .newsletter_mobile_text{
     display: none;
 }
