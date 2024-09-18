@@ -28,6 +28,9 @@
 
 
     /** Hero Section Responsive **/
+    #hero .container{
+        gap: 0;
+    }
     #hero .title_for_mobile{
         display: block;
         text-align: center;
@@ -35,13 +38,16 @@
         margin-top: -30px;
     }
     #hero .container .hero_left{
-        width: 40%
+        width: 45%
+    }
+    #hero .container .hero_right{
+        width: 55%
     }
     #hero .container .hero_left h1{
         display: none;
     }
     #hero .container .app_download img{
-        max-width: 150px;
+        max-width: 130px;
     }
     #hero .container .hero_left p br{
         display: none;
@@ -72,19 +78,15 @@
         width: 100%;
     }
 
+    #features .container .features_right .section_heading{
+        text-align: center;
+    }
+
 
     /** Work Section Responsive **/
     #work .container{
         display: block;
     }
-    #work .container .work_images{
-        gap: 10px;
-    }
-    #work .container .work_images img{
-        width: 33.33%;
-    }
-
-
 
     /** CTA Section Responsive **/
     #cta{
@@ -184,6 +186,16 @@
 
 /** Mobile Responsivness **/
 @media screen and (max-width: 768px){
+    /** Global **/
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .container{
+        max-width: 90%;
+    }
 
     /** Header Section **/
     #header .header_right .mode_text{
@@ -193,7 +205,11 @@
 
     /** Hero Section **/
     #hero .title_for_mobile h1{
-        font-size: 40px;
+        font-size: 35px;
+    }
+    #hero p{
+        margin: 0;
+        margin-bottom: 20px;
     }
     #hero .container{
         display: block;
@@ -210,17 +226,10 @@
         display: none;
     }
     #hero .container .app_download{
-        flex-direction: column;
+        display: block;
     }
     #hero .container .discover_more{
         justify-content: center;
-    }
-    #hero .container .app_download .desktop_img{
-        display: none;
-    }
-    #hero .container .app_download .mobile_img{
-        display: block;
-        flex-direction: column;
     }
 
     #hero .hero_right{
@@ -244,18 +253,84 @@
 
 
     /** Work Section **/
-    #work .res_hidden{
-        display: none;
-    }
-
     #work .work_images{
+        display: none!important;
+        text-align: center;
+    }
+    #work .mobile_image{
         display: block;
         text-align: center;
     }
     #work .work_image img{
         width: 100%;
     }
+    #work .section_heading p {
+        max-width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    #work 
+
+    /** FAQ Section Responsive **/
+    #faq .faq_right .accordion li{
+        font-size: 15px;
+        padding: 13px;
+    }
+    #faq .faq_right .accordion li p{
+        width: 80%;
+    }
+    #faq .contact .contact_box{
+        display: none;
+    }
+    #faq .contact button{
+        margin: 0 auto;
+    }
+
+
+    /** Newsletter Section responsive **/
+    #newsletter .container{
+        flex-direction: column;
+        gap: 30px;
+        padding: 25px 20px;
+    }
+    #newsletter .container .heading img{
+        max-width: 70px;
+    }
+    #newsletter .container .form form .input_group {
+        width: 80%;
+    }
+    #newsletter .form input[type="submit"] {
+        width: 40%;
+    }
+
+
+}
 
 
 
+
+/** When screen size under 576px **/
+@media screen and (max-width: 575px){
+    /** hero section **/
+    #hero .container .app_download .desktop_img img{
+        display: none;
+    }
+    #hero .container .mobile_img{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    /** Newsletter section **/
+    #newsletter .heading{
+        width: 100%!important;
+        justify-content: start;
+    }
+
+    #newsletter .form{
+        width: 100%!important;
+        padding-right: 0;
+    }
 }

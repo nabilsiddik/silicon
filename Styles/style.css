@@ -255,7 +255,7 @@ input:checked + .slider:before {
 #hero .title_for_mobile{
     display: none;
 }
-#hero .container .app_download .mobile_img{
+#hero .container .mobile_img{
     display: none;
 }
 
@@ -294,7 +294,16 @@ input:checked + .slider:before {
     margin: 0 auto;
     margin-top: 10px;
 }
-
+#work .container .work_images{
+    gap: 10px;
+    display: flex;
+}
+#work .container .work_images img{
+    width: 33.33%;
+}
+#work .mobile_image{
+    display: none;
+}
 
 /** CTA sectin **/ 
 #cta .container{
@@ -388,7 +397,7 @@ input:checked + .slider:before {
 }
 
 
-/** Section **/
+/** Newsletter Section **/
 #newsletter .container{
     background: #F3F6FF;
     padding: 60px 20px;
